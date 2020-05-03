@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "realworld"
+    }
+  },
+  "defaultProject": "realworld",
+  "cli": {
+    "analytics": false
+  }
 }
