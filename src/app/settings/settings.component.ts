@@ -11,7 +11,7 @@ import { User, UserService } from '../core';
 export class SettingsComponent implements OnInit {
   user: User = {} as User;
   settingsForm: FormGroup;
-  errors: Object = {};
+  errors: object = {};
   isSubmitting = false;
 
   constructor(
@@ -60,7 +60,7 @@ export class SettingsComponent implements OnInit {
     );
   }
 
-  updateUser(values: Object) {
+  updateUser(values: object) {
     Object.assign(this.user, values);
   }
 

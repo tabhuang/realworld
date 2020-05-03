@@ -9,8 +9,8 @@ import { Errors, UserService } from '../core';
   templateUrl: './auth.component.html'
 })
 export class AuthComponent implements OnInit {
-  authType: String = '';
-  title: String = '';
+  authType = '';
+  title = '';
   errors: Errors = {errors: {}};
   isSubmitting = false;
   authForm: FormGroup;
@@ -23,8 +23,8 @@ export class AuthComponent implements OnInit {
   ) {
     // use FormBuilder to create a form group
     this.authForm = this.fb.group({
-      'email': ['', Validators.required],
-      'password': ['', Validators.required]
+      email: ['', Validators.required],
+      password: ['', Validators.required]
     });
   }
 

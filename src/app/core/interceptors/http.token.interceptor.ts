@@ -11,6 +11,7 @@ export class HttpTokenInterceptor implements HttpInterceptor {
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     const headersConfig = {
       'Content-Type': 'application/json',
+      // tslint:disable-next-line: object-literal-key-quotes
       'Accept': 'application/json'
     };
 

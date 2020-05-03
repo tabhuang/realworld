@@ -12,7 +12,7 @@ export class EditorComponent implements OnInit {
   article: Article = {} as Article;
   articleForm: FormGroup;
   tagField = new FormControl();
-  errors: Object = {};
+  errors: object = {};
   isSubmitting = false;
 
   constructor(
@@ -76,7 +76,7 @@ export class EditorComponent implements OnInit {
     );
   }
 
-  updateArticle(values: Object) {
+  updateArticle(values: object) {
     Object.assign(this.article, values);
   }
 }

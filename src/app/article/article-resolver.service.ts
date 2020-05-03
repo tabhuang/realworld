@@ -18,7 +18,6 @@ export class ArticleResolver implements Resolve<Article> {
     state: RouterStateSnapshot
   ): Observable<any> {
 
-    // tslint:disable-next-line: no-string-literal
     return this.articlesService.get(route.params['slug'])
       .pipe(catchError((err) => this.router.navigateByUrl('/')));
   }
